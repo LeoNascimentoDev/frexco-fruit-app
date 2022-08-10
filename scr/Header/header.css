@@ -91,7 +91,7 @@ nav p {
   .dropDown {
     display: block;
     position: absolute;
-    right: 40px;
+    right: 10px;
   }
 
   .dropDown img {
