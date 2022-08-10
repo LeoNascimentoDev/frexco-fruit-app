@@ -1,26 +1,34 @@
 import React from 'react'
 
-const CardItem = () => {
+const CardItem = ({ name, nutritions, price, addItem, removeItem}) => {
+    
+    
     return (
         <div className='card'>
-            <img src='/img/apple.svg' />
-            <h1 className='productName'>Produto</h1>
-            <h3 className='productPrice'>R$ 10,00 Kg</h3>
-            <div>
+            <img src='/img/apple.svg' alt='Image-Item' />
+            <h1 className='productName'>{name}</h1>
+            <h3 className='productPrice'>R${price}</h3>
 
+            <div>
                 <div className='buttons'>
-                    <button>
+                    <button onClick={() => addItem(name, nutritions, price)}>
                         <img src='/img/shop.svg' />
                     </button>
-                    <button>
+                    <button className='btInfo'>
+
                         <img src='/img/info.svg' />
                     </button>
-                    <button>
+                    <button className='btRemove' onClick={() => removeItem(name)}>
                         <img src='/img/remove.svg' />
                     </button>
                 </div>
             </div>
-            {/* <h3>Descrição</h3> */}
+
+            <div id='productNutritions'  >
+                <h2>
+                    {nutritions}
+                </h2>
+            </div>
         </div>
     )
 }

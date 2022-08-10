@@ -1,60 +1,41 @@
 import React from 'react'
 import Card from '../CardItem/CardItem'
+import { products } from '../../database/index'
+import SectionInfo from './SectionInfo'
 
-const Main = () => {
+const Main = ({ addItem, removeItem }) => {
+
+    let nutriInfo =''
+
     return (
         <main>
-            <section className='info'>
-                <div>
-                    <img src='/img/apple.svg'/>
-                    <h2>
-                        PRODUTOS FRESCOS
-                    </h2>
-                    <h4>
-                        ESTOQUE NOVO TODOS OS DIAS
-                    </h4>
-                </div>
-                <div>
-                    <img src='/img/car.svg'/>
-                    <h2>
-                        FRETE GRÁTIS
-                    </h2>
-                    <h4>
-                        COMPRAS ACIMA DE R$50,00
-                    </h4>
-                </div>
-                <div>
-                    <img src='/img/new.svg'/>
-                    <h2>
-                        NOVIDADE
-                    </h2>
-                    <h4>
-                        NOVOS PRODUTOS
-                    </h4>
-                </div>
-                <div>
-                    <img src='/img/safety.svg'/>
-                    <h2>
-                       COMPRA SEGURA
-                    </h2>
-                    <h4>
-                        SEU DINHEIRO 100% SEGURO
-                    </h4>
-                </div>
-                
-     
-            </section>
+
+            <SectionInfo />
 
             <section className='cardsSection'>
 
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
-                <Card />
+                {products.map(function (product, index) {
+
+                    return (
+
+                        nutriInfo = ['Calorias: '+product.nutritions.calories+' Kcal ',
+                        'Carboidratos: '+product.nutritions.carbohydrates+' g ',
+                        'Gordura: '+product.nutritions.fat+' g ',
+                        'Proteína: '+product.nutritions.protein+' g ',
+                        'Açúcar: '+product.nutritions.sugar+' g '],
+
+
+                        < Card name={product.name}
+                            nutritions={nutriInfo}
+                            price={product.price}
+                            addItem={addItem}
+                            removeItem={removeItem}
+                            key={index}
+                        />
+                    )
+                }
+
+                )}
 
             </section>
 

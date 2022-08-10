@@ -4,7 +4,17 @@ const Footer = () => {
     return (
         
         <footer>
-            INFORMAÇÕES SOBRE O APP / SITE / EMPRESA
+            <p>
+            (SITE EM DESENVOLVIMENTO) 
+            </p>
+            {/* <br/> */}
+            <p>
+            Leonardo Nascimento, 2022.
+            </p>
+            {/* <br/> */}
+            <p>
+            Informações sobre o site / app / empresa.
+            </p>
         </footer>
 
 )
