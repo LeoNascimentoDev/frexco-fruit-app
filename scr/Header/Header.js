@@ -6,30 +6,36 @@ const Header = () => {
         <header>
 
             <div className='cover'>
-                <img src='/frexco-logo.png'></img>
+                <img src='/img/hortifruti-logo.png'></img>
             </div>
 
             <div className='search'>
                 <input type="text" id="txtSearch" placeholder="Buscar..." />
-                    <a href='#'>
-                <img src="/search.svg" alt="Buscar..." id="btnBusca" width={"30px"}/>
-                    </a>
+                <a href='#'>
+                    <img src="/img/search.svg" alt="Buscar..." id="btnBusca" width={"30px"} />
+                </a>
+
             </div>
 
             <nav>
-                <button>
-                    Minha Conta
-                </button>
-                <button>
-                    Meu Carrinho
-                </button>
+                <a href='#'>
+                    <img src="/img/login.svg" alt="login" id="btnLogin" width={"30px"} />
+                    <p>
+                        Minha Conta
+                    </p>
+                </a>
             </nav>
 
-            <div className='resume'>
-                <img src='/shop-car.svg' width={"50px"}/>
-                <div id='amount'> Nº de Itens: </div>
-                <div id='value'> Valor Total R$: </div>
+            <div >
+                <a href="#" className='resume'>
+                    <img src='/img/shop-car.svg' width={"50px"} />
+                    <div id='amount'> Nº de Itens: </div>
+                    <div id='value'> Valor Total R$: </div>
+                </a>
             </div>
+            <a className='dropDown' href='#'>
+                <img src="/img/menu.svg" alt="Menu" id="btnDropDown" />
+            </a>
 
         </header>
 

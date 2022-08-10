@@ -6,7 +6,7 @@ const Main = () => {
         <main>
             <section className='info'>
                 <div>
-                    <img src='/apple.svg'/>
+                    <img src='/img/apple.svg'/>
                     <h2>
                         PRODUTOS FRESCOS
                     </h2>
@@ -15,7 +15,7 @@ const Main = () => {
                     </h4>
                 </div>
                 <div>
-                    <img src='/car.svg'/>
+                    <img src='/img/car.svg'/>
                     <h2>
                         FRETE GRÁTIS
                     </h2>
@@ -24,7 +24,7 @@ const Main = () => {
                     </h4>
                 </div>
                 <div>
-                    <img src='/new.svg'/>
+                    <img src='/img/new.svg'/>
                     <h2>
                         NOVIDADE
                     </h2>
@@ -33,7 +33,7 @@ const Main = () => {
                     </h4>
                 </div>
                 <div>
-                    <img src='/safety.svg'/>
+                    <img src='/img/safety.svg'/>
                     <h2>
                        COMPRA SEGURA
                     </h2>
@@ -47,6 +47,11 @@ const Main = () => {
 
             <section className='cardsSection'>
 
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+                <Card />
                 <Card />
                 <Card />
                 <Card />

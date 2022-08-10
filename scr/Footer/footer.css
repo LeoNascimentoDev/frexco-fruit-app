@@ -1,12 +1,12 @@
 footer {
     
     height: 120px;
-    background-color: rgba(161, 162, 160, 0.507);
+    background-image: linear-gradient(to top, rgba(217, 217, 217, 0.227),rgba(217, 217, 217, 0));
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* position: fixed; */
+    /* position:fixed; */
     bottom: 0;
     width: 100%;
 
