@@ -4,7 +4,8 @@ const CardItem = () => {
     return (
         <div className='card'>
             <img src='/img/apple.svg' />
-            <h1>Nome Produto</h1>
+            <h1 className='productName'>Produto</h1>
+            <h3 className='productPrice'>R$ 10,00 Kg</h3>
             <div>
 
                 <div className='buttons'>
@@ -12,14 +13,14 @@ const CardItem = () => {
                         <img src='/img/shop.svg' />
                     </button>
                     <button>
-                        <img src='/img/remove.svg' />
+                        <img src='/img/info.svg' />
                     </button>
                     <button>
-                        <img src='/img/info.svg' />
+                        <img src='/img/remove.svg' />
                     </button>
                 </div>
             </div>
-            <h3>Descrição</h3>
+            {/* <h3>Descrição</h3> */}
         </div>
     )
 }
